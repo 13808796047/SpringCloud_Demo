@@ -19,3 +19,8 @@ mybatis-plus:
 userservice: # 给需要调用的微服务配置负载均衡规则，orderservice服务去调用userservice服务
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 负载均衡规则
+ribbon:
+  eureka:
+    enabled: true #开启饥饿加载
+    clients: #指定饥饿加载的服务名称
+      - UserService
