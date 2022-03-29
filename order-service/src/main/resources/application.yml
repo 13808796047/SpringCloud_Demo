@@ -8,10 +8,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
     name: OrderService
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8848/eureka
+  cloud:
+    nacos:
+      server-addr: http://127.0.0.1:8848
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8848/eureka
 mybatis-plus:
   global-config:
     db-config:
