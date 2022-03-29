@@ -1,0 +1,10 @@
+server:
+  port: 8848 # eureka服务端口
+spring:
+  application:
+    name: EurekaServer # eureka服务名称
+
+eureka:
+  client:
+    service-url: # eureka服务地址
+      defaultZone: http://127.0.0.1:8848/eureka
