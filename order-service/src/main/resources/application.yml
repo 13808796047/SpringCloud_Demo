@@ -16,3 +16,6 @@ mybatis-plus:
   global-config:
     db-config:
       table-prefix: tb_
+userservice: # 给需要调用的微服务配置负载均衡规则，orderservice服务去调用userservice服务
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 负载均衡规则
