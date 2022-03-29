@@ -1,7 +1,6 @@
 package com.summer.userservice.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.summer.userservice.UserServiceApp;
 import com.summer.userservice.mapper.UserMapper;
 import com.summer.userservice.pojo.User;
 import com.summer.userservice.service.UserService;

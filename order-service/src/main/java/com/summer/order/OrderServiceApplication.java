@@ -3,6 +3,7 @@ package com.summer.order;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,10 +13,11 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @MapperScan("com.summer.order.mapper")
-public class OrderServiceApp {
+@EnableEurekaClient
+public class OrderServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrderServiceApp.class,args);
+        SpringApplication.run(OrderServiceApplication.class,args);
     }
 
     /**

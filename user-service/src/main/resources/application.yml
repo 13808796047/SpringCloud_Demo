@@ -6,6 +6,12 @@ spring:
     username: root
     pasword:
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: UserService
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8848/eureka
 mybatis-plus:
   global-config:
     db-config:
