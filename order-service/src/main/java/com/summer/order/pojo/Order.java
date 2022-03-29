@@ -1,5 +1,6 @@
 package com.summer.order.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 /**
@@ -13,5 +14,6 @@ public class Order {
     private String name;
     private Integer num;
     private Long userId;
-//    private User user;
+    @TableField(exist = false)
+    private User user;
 }
