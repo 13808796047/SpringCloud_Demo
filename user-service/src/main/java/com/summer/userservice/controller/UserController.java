@@ -3,6 +3,7 @@ package com.summer.userservice.controller;
 import com.summer.userservice.config.PatternProperties;
 import com.summer.userservice.pojo.User;
 import com.summer.userservice.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +26,7 @@ public class UserController {
 
     //    @Value("${pattern.dateformat}")
 //    private String dateformat;
-    @Resource
+    @Autowired
     private PatternProperties properties;
 
     @GetMapping("prop")
